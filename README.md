@@ -1,14 +1,15 @@
-# Anaconda Python 3.8.8 for Data Science use
-# Python with PyTorch Lightning and CatBoost libraries
+# Anaconda Python for Data Science
+### Python 3.8.8 with PyTorch Lightning and CatBoost, XGBoost, LightGBM libraries
+
 
 ## How to Use this Image
-To launch the container, run the following command:
+To launch the container, run the following command:<br/>
 in Windows:
-```
+```cmd
 docker run -it --name lightning -p 8888:8888 -v C:\Work:/home/notebooks kriss024/anaconda-python-and-pytorch-lightning
 ```
 in Windows WSL or Linux:
-```
+```bash
 docker run -it --name lightning -p 8888:8888 -v "$PWD":/home/notebooks kriss024/anaconda-python-and-pytorch-lightning
 ```
 
