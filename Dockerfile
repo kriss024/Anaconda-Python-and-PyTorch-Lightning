@@ -17,7 +17,8 @@ RUN conda update conda -y \
 # Installing additional libraries
 RUN pip install psycopg2-binary \
 && pip install --upgrade gensim \
-&& pip install eli5
+&& pip install eli5 \
+&& pip install hpsklearn
 
 RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge python-graphviz \
@@ -39,6 +40,7 @@ RUN conda install -y -c conda-forge dill \
 && conda install -y -c conda-forge geopy \
 && conda install -y -c conda-forge catboost \
 && conda install -y -c conda-forge pytorch-lightning \
+&& conda install -y -c conda-forge hyperopt \
 && conda install -y -c anaconda joblib
 
 # Installing extensions for Jupyter Notebook
